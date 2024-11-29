@@ -5,201 +5,21 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Задание 1:");
-        printThreeWords();
-        System.out.println("Задание 2:");
-        chekSumSign();
-        System.out.println("Задание 3:");
-        printColor();
-        System.out.println("Задание 4:");
-        compareNumbers();
-        System.out.println("Задание 5:");
-        test5();
-        System.out.println("Задание 6:");
-        test6(-6);
-        System.out.println("Задание 7:");
-        test7(23);
-        System.out.println("Задание 8:");
-        test8("ZXC",3);
-        System.out.println("Задание 9:");
-        test9(2004);
-        System.out.println("Задание 10:");
-        test10();
-        System.out.println("Задание 11:");
-        test11();
-        System.out.println("Задание 12:");
-        test12();
-        System.out.println("Задание 13:");
-        test13();
-        System.out.println("Задание 14:");
-        test14(3,2);
-    }
-    //Первое задание
-    public static void printThreeWords(){
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
-    //Второе задание
-    public static void chekSumSign(){
+        // Задание 1
+        Worker worker = new Worker("Иванов Иван Иванович", "Тестировщик", "ivanov@mail.ru", "+ 375334567890 ", "350.23 тыс.руб",54);
+        worker.someInfo();
+        // Задание 2
+        Worker[] workArray = new Worker[5];
+        workArray[0] = new Worker("Сергеев Сергей Сергеевич", "Инженер", "sergey@mail.ru", "+ 375334534590 ", "270.43 тыс.руб",34);
+        workArray[1] = new Worker("Антонов Антон Антонович", "Инженер", "sergey@mail.ru", "+ 375334534510 ", "70.43 тыс.руб",26);
+        workArray[2] = new Worker("Зубенко Михаил Петрович", "Директор", "mafiozi666@mail.ru", "+ 375334824550 ", "9 970.43 тыс.руб",72);
+        workArray[3] = new Worker("Паровозов Аркадий Аркадьевич", "Пожарный", "hero777@mail.ru", "+ 375334754590 ", "20.43 тыс.руб",41);
+        workArray[4] = new Worker("Голубенко Зинаида Павловна", "Уборщик", "noname@mail.ru", "+ 375331134580 ", "670.43 тыс.руб",25);
+        // Задание 3
+        Park park = new Park();
 
-        int a = 1,b = -2;
-            if (a + b >= 0 ){
-                System.out.println("Сумма положительная");
-            }
-            else System.out.println("Сумма отрицательная");
 
     }
-    //Третье задание
-    public static void printColor() {
 
-        int value = 12;
-            if (value <= 0 ){
-                System.out.println("Красный");
-            } else if (value <= 100) {
-                System.out.println("Желтый");
-            } else if (value > 100 ){
-                System.out.println("Зеленый");
-            }
-
-    }
-    //Четвертое задание
-    public static void compareNumbers(){
-
-        int a = 1, b = 2;
-            if ( a >= b ){
-            System.out.println("a >= b");
-            }else System.out.println("a < b");
-
-    }
-    //Пятое задание
-    public  static void test5(){
-
-        int a = 1,b = 2;
-        boolean c;
-            if (a + b >= 10 && a + b <= 20){
-                c = true;
-            }else c = false;
-        System.out.println(c);
-
-    }
-    //Шестое задание
-    public static int test6(int a){
-
-        if( a >= 0 ){
-                System.out.println("Число положиетльное");
-        }else System.out.println("Число отрицательное");
-
-        return a;
-    }
-    //Седьмое задание
-    public static int test7(int a){
-
-        boolean b;
-
-            if ( a <= 0){
-            b = false;
-            }else b = true;
-
-        System.out.println(b);
-
-        return a;
-    }
-    //Восьмое задание
-    public static String test8(String a, int b){
-
-        for (int i = 0; i < b; i++){
-            System.out.println(a);
-        }
-
-        return a;
-    }
-    //Девятое задание
-    public static int test9(int year){
-
-        boolean a;
-
-            if ( year % 4 == 0 ){
-                a = true;
-            }
-            else if ( year % 100 == 0 ){
-                a = false;
-            }
-            else if (  year % 400 ==0 ){
-                a = true;
-            }
-            else a = false;
-
-        System.out.println(a);
-        return year;
-    }
-    //Десятое задание
-    public static void test10(){
-
-        int[] arr =  {0,1,1,0,1,0};
-
-            for (int i = 0; i < arr.length; i++){
-                if( arr[i] == 0){
-                    arr[i] = 1;
-                }else arr[i] = 0;
-
-                System.out.println(arr[i]);
-            }
-    }
-    //Одинадцатое задание
-    public static void test11(){
-
-        int[] arr = new int[101];
-            for (int i = 1; i < arr.length; i++){
-                arr[i] = i;
-                System.out.println(arr[i]);
-            }
-    }
-    //Двенадцатое задание
-    public static void test12(){
-
-        int[] arr = {1,5,3,2,11,4,5,2,4,8,9,1};
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < 6) {
-                arr[i] = arr[i] * 2;
-            }
-            System.out.println(arr[i]);
-        }
-    }
-    //Тринадцатое задане
-    public static void test13(){
-
-        int[][] arr = new int[3][3];
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
-
-                    if ( i == j) {
-
-                        arr[i][j] = 1;
-
-                    }
-                    if (i + j == 3 - 1) {
-
-                        arr[i][j] = 1;
-
-                    }
-
-                    System.out.println(arr[i][j]);
-                }
-
-            }
-    }
-    //Четырнадцатое задание
-    public static int test14(int len, int initialValue){
-
-        int[] arr = new int[len];
-
-        for (int i = 0; i < arr.length; i++) {
-                arr[i] = initialValue;
-
-            System.out.println(arr[i]);
-        }
-        return arr[len];
-    }
 
 }

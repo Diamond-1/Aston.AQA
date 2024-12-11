@@ -3,7 +3,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        // Задание 1
+        //  Задание 1
         Animal animal = new Animal();
         animal.Feed(50);
         Dog dog = new Dog("Бобик");

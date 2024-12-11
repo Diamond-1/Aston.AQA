@@ -3,7 +3,6 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-
         // Задание 1
         Worker worker = new Worker("Иванов Иван Иванович", "Тестировщик", "ivanov@mail.ru", "+ 375334567890 ", "350.23 тыс.руб", 54);
         worker.someInfo();

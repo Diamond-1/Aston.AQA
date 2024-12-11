@@ -1,7 +1,6 @@
 package org.example;
 
 public class Worker {
-
     private String fio;
     private String role;
     private String email;

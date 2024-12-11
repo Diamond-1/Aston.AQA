@@ -2,26 +2,24 @@ package org.example;
 
 public class Worker {
 
+    private String fio;
+    private String role;
+    private String email;
+    private String phone;
+    private String salary;
+    private int age;
 
-    String FIO;
-    String Role;
-    String Email;
-    String Phone;
-    String Salary;
-    int Age;
-
-
-        public Worker( String _FIO, String _Role, String _Email, String _Phone, String _Salary, int _Age){
+    public Worker(String fio, String role, String email, String phone, String salary, int age) {
         System.out.println("Создан новй сотрудник");
-        FIO = _FIO;
-        Role = _Role;
-        Email = _Email;
-        Phone = _Phone;
-        Salary = _Salary;
-        Age = _Age;
+        this.fio = fio;
+        this.role = role;
+        this.email = email;
+        this.phone = phone;
+        this.salary = salary;
+        this.age = age;
     }
 
-    public void someInfo(){
-        System.out.println("ФИО: " + FIO + "\n" + "Должнлсть: " + Role + "\n" + "Email: " + Email + "\n" + "Телефон: " + Phone + "\n" + "Зарплата: " + Salary + "\n" + "Возраст: " + Age);
+    public void someInfo() {
+        System.out.println("ФИО: " + fio + "\n" + "Должнлсть: " + role + "\n" + "Email: " + email + "\n" + "Телефон: " + phone + "\n" + "Зарплата: " + salary + "\n" + "Возраст: " + age);
     }
 }

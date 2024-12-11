@@ -4,17 +4,19 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         // Задание 1
-        Worker worker = new Worker("Иванов Иван Иванович", "Тестировщик", "ivanov@mail.ru", "+ 375334567890 ", "350.23 тыс.руб", 54);
-        worker.someInfo();
+        Animal animal = new Animal();
+        animal.Feed(50);
+        Dog dog = new Dog("Бобик");
+        dog.Run(19);
+        Cat cat = new Cat("Гарфилд", 10);
+        cat.Swimm(20);
+        Cat[] cats = new Cat[3];
+        cats[0] = new Cat("Гоча", 10);
+        cats[1] = new Cat("Сигма", 30);
+        cats[2] = new Cat("Маня", 20);
         // Задание 2
-        Worker[] workArray = new Worker[5];
-        workArray[0] = new Worker("Сергеев Сергей Сергеевич", "Инженер", "sergey@mail.ru", "+ 375334534590 ", "270.43 тыс.руб", 34);
-        workArray[1] = new Worker("Антонов Антон Антонович", "Инженер", "sergey@mail.ru", "+ 375334534510 ", "70.43 тыс.руб", 26);
-        workArray[2] = new Worker("Зубенко Михаил Петрович", "Директор", "mafiozi666@mail.ru", "+ 375334824550 ", "9 970.47 тыс.руб", 72);
-        workArray[3] = new Worker("Паровозов Аркадий Аркадьевич", "Пожарный", "hero777@mail.ru", "+ 375334754590 ", "20.43 тыс.руб", 41);
-        workArray[4] = new Worker("Голубенко Зинаида Павловна", "Уборщик", "noname@mail.ru", "+ 375331134580 ", "670.43 тыс.руб", 25);
-        // Задание 3
-        Park park = new Park();
+
+
 
 
     }

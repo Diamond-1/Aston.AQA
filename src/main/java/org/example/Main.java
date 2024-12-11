@@ -14,7 +14,7 @@ public class Main {
         cats[0] = new Cat("Гоча", 10);
         cats[1] = new Cat("Сигма", 30);
         cats[2] = new Cat("Маня", 20);
-        // Задание 2
+
 
 
 
